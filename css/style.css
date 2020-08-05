@@ -22,6 +22,7 @@ h1 {
 .screen {
   cursor: pointer;
   width: 50%;
+  height: 25rem;
   background-color: black !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -29,13 +30,13 @@ h1 {
 
 .controls {
   background-color: #333;
-  color: white;
-  width: 60%;
+  color: #ffffff;
+  width: 50%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
@@ -45,16 +46,20 @@ h1 {
   cursor: pointer;
 }
 
-.controls fa-play {
-  color: red;
-}
-
-.controls fa-stop {
-  color: green;
-}
-
-.controls pause {
+.controls .fa-play {
   color: white;
+}
+
+.controls .fa-stop {
+  color: rgb(128, 0, 6);
+}
+
+.controls .fa-pause {
+  color: white;
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 .timestamp {
@@ -65,6 +70,6 @@ h1 {
 @media (max-width: 800px) {
   .screen,
   .controls {
-    width: 70%;
+    width: 90%;
   }
 }
